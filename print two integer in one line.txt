@@ -1,0 +1,16 @@
+6. Print two integers in one line
+Test Case 1
+Output: 5 10
+Test Case 2
+Output: 20 30
+
+#include <stdio.h>
+int main() {
+    
+    printf("5 ");
+    printf("10\n");
+    printf("20 ");
+    printf("30");
+    
+    return 0;
+}
