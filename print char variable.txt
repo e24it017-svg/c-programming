@@ -1,0 +1,13 @@
+Print char variable
+Test Case 1
+Output: A
+Test Case 2
+Output: M
+
+#include<stdio.h>
+int main(){
+    char a,b;
+    scanf("%c %c",&a,&b);
+    printf("%c \n%C",a,b);
+return 0;
+}
