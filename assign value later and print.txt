@@ -1,0 +1,16 @@
+10. Assign value later and print
+Test Case 1
+Output: 10
+Test Case 2
+Output: 60
+
+#include<stdio.h>
+int main(){
+    int a;
+    a=10;
+    int b;
+    b=60;
+    printf("%d\n",a);
+    printf("%d",b);
+    return 0;
+}
