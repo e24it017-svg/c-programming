@@ -1,0 +1,16 @@
+Print a character
+Test Case 1
+Output: A
+Test Case 2
+
+Output: Z
+
+#include <stdio.h>
+int main() {
+    char a ='A';
+    char b= 'Z';
+    printf("%c\n",a);
+    printf("%c",b);
+    
+    return 0;
+}
