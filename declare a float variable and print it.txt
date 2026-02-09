@@ -1,0 +1,12 @@
+3. Declare a float variable and print it
+Test Case 1
+Output: 2.5
+Test Case 2
+Output: 6.75
+
+#include <stdio.h>
+int main() {
+    float a=2.5,b=6.75;
+    printf("%.1f\n%.2f",a,b);
+    return 0;
+}
