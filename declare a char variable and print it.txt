@@ -1,0 +1,12 @@
+Declare a character variable and print it
+Test Case 1
+Output: X
+Test Case 2
+Output: B
+
+#include <stdio.h>
+int main() {
+    char a='X',b='B';
+    printf("%c\n%c",a,b);
+    return 0;
+}
