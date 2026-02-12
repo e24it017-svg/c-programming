@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int a;
+    float b;
+    printf("input:");
+    scanf("%d",&a);
+    if (a<=100)
+      b=a*5;
+     else if (a<=200)
+      b=a*5;
+    else
+      b=a*6;
+    printf("bill amount = Rs.%.0f",b);
+
+    return 0;
+}
