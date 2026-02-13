@@ -4,9 +4,9 @@ int main() {
     printf("input:");
     scanf("%d",&n);
     for(i=n;i!=0;i=i/10){
-        int rem=i%10;
     count++;
     }
     printf("output:%d",count);   
 return 0;
+
 }
