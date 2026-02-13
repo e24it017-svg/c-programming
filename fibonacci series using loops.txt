@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int i,n,a,first=0,second=1;
+    printf("input:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+      printf(" %d",first);
+      int temp=first;
+      a=first+second;
+      first=second;
+      second=a;
+    }
+     
+return 0;
+
+}
