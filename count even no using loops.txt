@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int i,n,count=0;
+    printf("input:");
+    scanf("%d",&n);
+    for(i=n;i!=0;i=i/10){
+        if(i%2==0)
+    count++;
+    }
+    printf("output:%d",count);   
+return 0;
+
+}
