@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int a,b,r,s=0;
+    printf("input:");
+    scanf("%d",&a);
+    b=a;
+    for(;a!=0;a=a/10){
+            r=a%10;
+            s=s+(r*r*r); 
+        }
+    if(s==b){
+        printf("yes");
+    }   
+    else{
+        printf("no");
+    }
+    return 0;
+}
