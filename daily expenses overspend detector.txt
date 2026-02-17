@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int n,a,total=0,over=0;
+    printf("input:");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a);
+        total=total+a;
+    
+        if(a>1000){
+            over++;
+        }
+    }
+    printf("Total Expenses:%d\n",total);
+    printf("Overspend Days:%d",over);
+
+    return 0;
+}
