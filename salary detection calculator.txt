@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int a,b,n,i,salary,final;
+    printf("input:");
+    scanf("%d%d",&a,&b);
+    for(i=1;i<=b;i++){
+        a=a-100;
+    }
+    final=a;
+    printf("Final Salary:₹%d",final);
+    return 0;
+}
