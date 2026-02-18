@@ -11,7 +11,8 @@ int main(){
         count++;
         }
    }
-   printf("total data:%d\n",maxprice); 
-   printf("high usuage days:%d",count);
+   printf("highest price:%d\n",maxprice); 
+   printf("high price days:%d",count);
     return 0;
 }
+
