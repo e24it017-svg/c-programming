@@ -10,7 +10,8 @@ int main(){
         count++;
         }
    }
-   printf("total revenue:%d\n",total); 
-   printf("target days:%d",count);
+   printf("total errors:%d\n",total); 
+   printf("critical hours:%d",count);
     return 0;
 }
+
