@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int i,n,a,total=0;
+    printf("input:");
+    scanf("%d",&n);
+    scanf("%d",&a);
+    for(i=0;i<n;i++){
+        total=total+a;
+    }
+    printf("Total Collection:₹%d",total);
+    return 0;
+}
