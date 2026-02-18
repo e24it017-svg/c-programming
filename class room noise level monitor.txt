@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int a;        
+    int b;        
+    int c = 0;    
+    int d = 0;    
+    scanf("%d", &a);
+    for(int i = 0; i < a; i++) {
+        scanf("%d", &b);
+        if(i == 0) {
+            c = b;   
+        }
+        if(b > c) {
+            c = b;
+        }
+        if(b > 70) {
+            d++;
+        }
+    }
+    printf("Maximum Noise: %d\n", c);
+    printf("Noisy Periods: %d\n", d);
+
+    return 0;
+}
