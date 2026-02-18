@@ -10,7 +10,8 @@ int main(){
         count++;
         }
    }
-   printf("total data:%d\n",Total); 
-   printf("high usuage days:%d",count);
+   printf("total patients:%d\n",Total); 
+   printf("overcrowded days:%d",count);
     return 0;
 }
+
