@@ -10,7 +10,8 @@ int main(){
         count++;
         }
    }
-   printf("total revenue:%d\n",total); 
-   printf("target days:%d",count);
+   printf("total delay:%d\n",total); 
+   printf("delayed deliveries:%d",count);
     return 0;
+
 }
