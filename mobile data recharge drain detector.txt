@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int a;      
+    int b;     
+    int c;      
+    int d;      
+    int e = 0;  
+    scanf("%d", &a);
+    scanf("%d", &b);
+    d = a;
+    for(int i = 0; i < b; i++) {
+        scanf("%d", &c);
+        if(d >= c) {
+            d = d - c;
+            e++;
+        } else {
+            break;
+        }
+    }
+    printf("Remaining Data: %d\n", d);
+    printf("Successful Days: %d\n", e);
+    return 0;
+}
