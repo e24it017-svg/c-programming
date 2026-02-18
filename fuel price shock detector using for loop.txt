@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int i,n,a,maxprice=0,count=0;
+    printf("input:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&a);
+        if(a>maxprice)
+        maxprice=a;
+        if(a>100){
+        count++;
+        }
+   }
+   printf("total data:%d\n",maxprice); 
+   printf("high usuage days:%d",count);
+    return 0;
+}
