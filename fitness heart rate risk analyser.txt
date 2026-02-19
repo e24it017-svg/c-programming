@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int i, n,a,count=0,max=0;
+    printf("input:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+    scanf("%d",&a);
+    if(a>max)
+    max=a;
+    if(a>140){
+      count++;
+    }
+    }
+    printf("max heart rate:%d\n",max);
+    printf("danger readings:%d",count);
+    return 0;
+}
