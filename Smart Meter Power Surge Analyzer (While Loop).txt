@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int a, b;          
+    int i = 0;
+    int max = 0;       
+    int surge = 0;    
+    scanf("%d", &a);   
+    while(i < a) {
+        scanf("%d", &b);   
+        if(i == 0 || b > max)   
+            max = b;
+        if(b > 5)              
+            surge++;
+        i++;
+    }
+    printf("Max Usage: %d\n", max);
+    printf("Surge Hours: %d\n", surge);
+    return 0;
+}
