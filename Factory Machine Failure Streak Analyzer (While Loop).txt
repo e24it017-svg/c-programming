@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main() {
+    int n, value, i = 0, streak = 0, max = 0;
+    scanf("%d", &n); 
+    while(i < n){
+        scanf("%d", &value);   
+        if(value == 0){      
+            streak++;         
+            if(streak > max)  
+                max = streak;
+        } else {              
+            streak = 0;      
+        }
+        i++;
+    }
+    printf("Longest Failure Streak: %d\n", max);
+    return 0;
+}
