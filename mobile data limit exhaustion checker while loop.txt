@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main() {
+    int n, a, i = 0, remain = 0, data;
+    scanf("%d", &a);   
+    scanf("%d", &n);   
+    while(i < n && a > 0) {
+        scanf("%d", &data);
+        a -= data;     
+        remain++;      
+        i++;
+    }
+    if(a < 0){
+        a = 0;         
+    }
+    printf("Days Used: %d\n", remain);
+    printf("Remaining Data: %dGB\n", a);
+    return 0;
+}
