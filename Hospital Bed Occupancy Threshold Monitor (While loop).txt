@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int a, b, c;          
+    int i = 0;
+    int occupied = 0;
+    int critical = 0;
+    scanf("%d", &a);   
+    scanf("%d", &b);   
+    while(i < b) {
+        scanf("%d", &c);     
+        occupied += c;       
+        if(occupied > (0.9 * a))   
+            critical++;
+        i++;
+    }
+    printf("Final Occupied Beds: %d\n", occupied);
+    printf("Critical Hours: %d\n", critical);
+    return 0;
+}
