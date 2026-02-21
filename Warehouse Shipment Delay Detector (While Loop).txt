@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int a, b;        
+    int i = 0;
+    int total = 0;   
+    int count = 0;   
+    scanf("%d", &a);   
+    while(i < a) {
+        scanf("%d", &b);   
+        total += b;       
+        if(b > 2)          
+            count++;
+        i++;
+    }
+    printf("Total Delay: %d\n", total);
+    printf("Delayed Days: %d\n", count);
+    return 0;
+}
