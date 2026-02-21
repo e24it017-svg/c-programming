@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    int a, b, c, i = 0;
+    int total = 0, count = 0;
+    int overload = 0;
+    scanf("%d", &a);   
+    scanf("%d", &b);   
+    while(i < b) {
+        scanf("%d", &c);   
+        total += c;
+
+        if(total <= a) {
+            count++;       
+        } else {
+            overload = 1;  
+            break;         
+        }
+        i++;
+    }
+    printf("Passengers Allowed: %d\n", count);
+    if(overload == 1)
+        printf("Overload: Yes\n");
+    else
+        printf("Overload: No\n");
+    return 0;
+}
