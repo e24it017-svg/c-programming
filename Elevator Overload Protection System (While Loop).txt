@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int a, b, c = 0, d = 0, e = 0;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    while (c < b) {
+        scanf("%d", &d);
+        if (e + d <= a) {
+            e = e + d;
+            c++;
+        } else {
+            break;
+        }
+    }
+    if (c < b) {
+        printf("People Entered: %d\n", c);
+        printf("Overload Status: Yes\n");
+    } else {
+        printf("People Entered: %d\n", c);
+        printf("Overload Status: No\n");
+    }
+    return 0;
+}
