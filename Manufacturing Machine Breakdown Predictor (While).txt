@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int a, b = 0, c, d = 0, e = 0, f = 0;
+    scanf("%d", &a);
+    while (b < a) {
+        scanf("%d", &c);
+        if (c > 70) {
+            d++;
+            e++;
+            if (d == 2 && f == 0) {
+                f = b + 1;
+            }
+        } else {
+            d = 0;
+        }
+        b++;
+    }
+    if (f == 0) {
+        printf("Breakdown At Reading: Not Occurred\n");
+    } else {
+        printf("Breakdown At Reading: %d\n", f);
+    }
+    printf("Unsafe Readings: %d\n", e);
+    return 0;
+}
