@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int a, b, c = 0, d, e = 0, f = 0;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    while (c < b) {
+        scanf("%d", &d);
+        if (d <= a) {
+            e++;
+        } else {
+            f++;
+        }
+        c++;
+    }
+    printf("Safe Hours: %d\n", e);
+    printf("Failure Count: %d\n", f);
+    return 0;
+}
