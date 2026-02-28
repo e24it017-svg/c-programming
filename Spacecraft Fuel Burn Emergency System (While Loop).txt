@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    int a, b, c, d = 0, e = 0;
+    scanf("%d", &a); 
+    scanf("%d", &b); 
+    int f = a; 
+    int g = 0; 
+    int h = 0; 
+    while (h < b) {
+        scanf("%d", &c);
+        f = f - c;
+        if (f < 0 && g == 0) {
+            g = h + 1; 
+            e = -f;    
+        }
+        h++;
+    }
+    if (g == 0) {
+        printf("Emergency Stage: Not Occurred\n");
+        printf("Fuel Wasted: 0\n");
+    } else {
+        printf("Emergency Stage: %d\n", g);
+        printf("Fuel Wasted: %d\n", e);
+    }
+    return 0;
+}
