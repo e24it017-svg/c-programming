@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int a, b, c = 0, d, e = 0, f = 0;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    while (c < b) {
+        scanf("%d", &d);
+        if (e + d <= a) {
+            e = e + d;
+        } else {
+            f = f + d;
+        }
+        c++;
+    }
+    printf("Treated Patients: %d\n", e);
+    printf("Rejected Patients: %d\n", f);
+    return 0;
+}
