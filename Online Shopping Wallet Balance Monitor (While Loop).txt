@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int a, b, c = 0, d, e = 0;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    while (c < b) {
+        scanf("%d", &d);
+        if (a >= d) {
+            a = a - d;
+            e++;
+        } else {
+            break;
+        }
+        c++;
+    }
+    printf("Successful Purchases: %d\n", e);
+    printf("Final Balance: %d\n", a);
+    return 0;
+}
