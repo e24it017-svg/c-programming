@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int a, b = 0, c, d = 0, e = 0, f = 0;
+    scanf("%d", &a);
+    while (b < a) {
+        scanf("%d", &c);
+        if (c > 20) {
+            d++;
+            e++;
+            if (e > f) {
+                f = e;
+            }
+        } else {
+            e = 0;
+        }
+        b++;
+    }
+    printf("Congestion Minutes: %d\n", d);
+    printf("Longest Congestion Streak: %d\n", f);
+    return 0;
+}
