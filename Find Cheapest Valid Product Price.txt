@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int n, i;
+    int price[100];
+    int min = -1;
+    scanf("%d", &n);
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &price[i]);
+        if(price[i] > 0)
+        {
+            if(min == -1 || price[i] < min)
+            {
+                min = price[i];
+            }
+        }
+    }
+    if(min == -1)
+        printf("No positive");
+    else
+        printf("%d", min);
+    return 0;
+}
