@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    int n, i, j;
+    int codes[100];
+    int duplicate = 0;
+    scanf("%d", &n);
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &codes[i]);
+    }
+    for(i = 0; i < n; i++)
+    {
+        for(j = i + 1; j < n; j++)
+        {
+            if(codes[i] == codes[j])
+            {
+                duplicate = 1;
+                break;
+            }
+        }
+        if(duplicate == 1)
+            break;
+    }
+    if(duplicate == 1)
+        printf("No");
+    else
+        printf("Yes");
+    return 0;
+}
