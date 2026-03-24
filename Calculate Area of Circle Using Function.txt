@@ -1,0 +1,10 @@
+#include<stdio.h>
+float c(float a){
+    return (3.14*a*a);
+}
+int main(){
+    float x;
+    scanf("%f",&x);
+    printf ("%.2f",c(x));
+    return 0;
+}
