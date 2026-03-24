@@ -1,0 +1,10 @@
+#include<stdio.h>
+float si(float a,float b,float c){
+    return (a*b*c)/100;
+}
+int main(){
+    float x,y,z;
+    scanf("%f%f%f",&x,&y,&z);
+    printf ("%.2f",si(x,y,z));
+    return 0;
+}
